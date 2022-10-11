@@ -1,0 +1,74 @@
+body {
+    background-color: white;
+    font-family: 'Dosis', sans-serif;
+}
+
+.signin-box{
+    width: 360px;
+    height: 620;
+    margin: auto;
+    background-color: white;
+    border-radius: 3px;
+}
+
+h1{
+    text-align: center;
+    padding-top: 30px;
+}
+
+h4{
+    text-align: center;
+}
+
+form{
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 50px;
+    padding-top: 20px;
+    box-shadow: #5856D4;
+    padding-right: 65px;
+    border: none;
+    padding: 50px;
+    box-shadow: 1px 1px 5px 5px #d1d1e6;
+    border-radius: 25px;
+
+}
+
+form label{
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+form input{
+    background-color: #dfe7f4;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid #8d99ae;
+    border-radius: 6px;
+    outline: none;
+}
+
+input[type="button"]{
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #5856D4;
+    color: white;
+    font-size: 18px;
+}
+
+#testing {
+    text-align: left;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+#testingTwo {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
