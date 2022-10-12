@@ -110,17 +110,20 @@ form input{
 }
 
 input[type="button"]{
-    width: 320px;
-    height: 35px;
-    margin-top: 20px;
+    width: 310px;
+    height: 50px;
     border: none;
     background-color: #BE9CF7;
     color: black;
+    font-weight: bold;
+    text-transform: uppercase;
     font-size: 18px;
     border-radius: 5px;
+    margin-top: 70px;
+    margin-bottom: 50px;
 }
 
-#testing {
+/*#testing {
     text-align: left;
     padding-top: 20px;
     font-size: 15px;
@@ -133,4 +136,4 @@ input[type="button"]{
     font-size: 15px;
     padding-bottom: 20px;
     color: white;
-}
+/* } */
