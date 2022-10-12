@@ -103,13 +103,13 @@ form label{
 form input{
     background-color: #a3a2a2;
     width: 100%;
-    padding: 7px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     outline: none;
 }
 
-input[type="button"]{
+button {
     width: 310px;
     height: 50px;
     border: none;

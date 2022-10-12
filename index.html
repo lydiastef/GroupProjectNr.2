@@ -10,32 +10,66 @@
 <body>
    <nav>
     </label>
-    <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">Sign In</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-
+    <ul class="nav-menu">
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#">Sign In</a></li>
+        <li class="nav-item"><a href="#">About</a></li>
+        <li class="nav-item"><a href="#">Contact</a></li>
     </ul>
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
    </nav>
 
     <h1>Sign In</h1>
     <h4>Sign in to get the best deals!</h4>
+    
     <div class="signin-box">
-        <form>
-            <label>Username</label>
-            <input type="text" placeholder="">
-            <label>Password</label>
-            <input type="text" placeholder="">
+        <form id="form">
+            <div class="signin-box">
+
+                <label for="username">Username</label>
+                <i class="fas fa-user"></i>
+
+                <input 
+                    type="text" 
+                    name="username"
+                    id="username"
+                    placeholder=""
+                />
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+                <div class="error"></div>
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <i class="fas fa-lock"></i>
+
+                <input 
+                    type="password" 
+                    name="password"
+                    id="password"
+                    placeholder=""
+                />
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+                <div class="error"></div>
+            </div>
+
             <div id="testing">
                 <p>Forgot password?</p>
             </div>
-            <input type="button" value="Sign In">
+            <!--<input type="button" value="Sign In">-->
+            <button id="btn" type="submit">Sign In</button>
             <div id="testingTwo">
             <p>Not a member? <a href="#">Sign up</a></p>
             </div>
         </form>
     </div>
-    
+    <script src="main.js"></script>
+
 </body>
 </html>

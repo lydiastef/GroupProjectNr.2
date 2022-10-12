@@ -54,13 +54,64 @@ a.active,a:hover{
     display: none;
 }
 
-/*.signin-box{
-    width: 250px;
-    height: 620;
-    margin: auto;
-    background-color: #363636;
-    border-radius: 3px;
-}*/
+.hamburger {
+    display: none;
+    margin-top: 30px;
+    margin-right: 20px;
+    float: right;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 1rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
 
 h1{
     text-align: center;
@@ -103,26 +154,42 @@ form label{
 form input{
     background-color: #a3a2a2;
     width: 100%;
-    padding: 7px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     outline: none;
 }
 
-input[type="button"]{
-    width: 320px;
-    height: 35px;
+button {
+    width: 310px;
+    height: 50px;
     margin-top: 20px;
     border: none;
     background-color: #BE9CF7;
     color: black;
     font-size: 18px;
     border-radius: 5px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-weight: bold;
 }
+
+button:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+    background: #927abc;
+  }
+
+.error {
+    font-size: 14.5px;
+    margin-top: 5px;
+    color: red;
+  }
 
 #testing {
     text-align: left;
-    padding-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
     font-size: 15px;
     color: white;
 }
