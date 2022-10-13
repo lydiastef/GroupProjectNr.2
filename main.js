@@ -35,10 +35,10 @@ form.addEventListener("submit", (e) => {
 
     engine(username, 0, "Please type username");
     engine(password, 1, "Please type password");
-  });
+});
 
 
-  let engine = (id, serial, message) => {
+let engine = (id, serial, message) => {
 
     if (id.value.trim() === "") {
         errorMsg[serial].innerHTML = message;
@@ -55,4 +55,4 @@ form.addEventListener("submit", (e) => {
         failureIcon[serial].style.opacity = "0";
         successIcon[serial].style.opacity = "1";
     }
-  }
+}
